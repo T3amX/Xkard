@@ -31,7 +31,7 @@ def welcome(message):
     item3 = types.KeyboardButton("Наше приложение.")
     markup.add(item1, item2,item3)
      
-    msg = bot.send_message(message.chat.id, f"Добро пожаловать, {message.from_user.first_name}. Данный бот создан, что бы каждый житель города имел возможность быстро получить доступ к функциям Xcard. <a href='https://yandex.ru/'>Ссылка на приложение</a>",
+    msg = bot.send_message(message.chat.id, f"Добро пожаловать, {message.from_user.first_name}. Данный бот создан, что бы каждый житель города имел возможность быстро получить доступ к функциям Xkard. <a href='https://yandex.ru/'>Ссылка на приложение</a>",
         parse_mode='html', reply_markup=markup)
 
     bot.register_next_step_handler(msg, func)
@@ -47,8 +47,6 @@ def func(message):
     if message.chat.type == 'private':
         if message.text == 'Зарегистрировать карту.':
 
-
-            
             def start(message):
                 msg = bot.send_message(message.chat.id, 'Укажите ваш пол (м/ж) : ')
                 bot.register_next_step_handler(msg, start_2)
@@ -65,11 +63,11 @@ def func(message):
                 msg = bot.send_message(message.chat.id, 'Из какого вы города? : ')
                 bot.register_next_step_handler(msg, start_4)
 
-            def start_3(message):
-                msg = bot.send_message(message.chat.id, 'Укажите свой номер телефона (формат: 7xxxxxxxxxx) : ')
-                bot.register_next_step_handler(msg, start_4)
-
             def start_4(message):
+                msg = bot.send_message(message.chat.id, 'Укажите свой номер телефона (формат: 7xxxxxxxxxx) : ')
+                bot.register_next_step_handler(msg, start_5)
+
+            def start_5(message):
                 #if flag == False:
                 (x, y) = (600, 75)
                 idno = random.randint(10000000, 90000000)
