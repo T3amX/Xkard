@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛК Новороссийск</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lk.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="glav">
+                <div class="show_link"><a href="#">Главная</a></div>
+            </div>
+            <div class="central_buttons">
+                <div class="show_link"><a href="./city_map.htm">Карта города</a></div>
+                <div class="show_link"><a href="./subscribes.htm">Услуги</a></div>
+            </div>
+            <div class="little_buttons">
+                <div class="show_link"><a href="#" id=help><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="./lk.htm"><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="#"><img src="images/btn1.svg" alt="btn1"></a></div>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="content_header">
+            костыль
+        </div>
+        <h1>Личный кабинет</h1>
+        <section class="main_info">
+            <div class="info">
+                <img src="images/photo.jpg" alt="photo">
+                <div class="fio">
+                    <p id="fam">Иванов</p>
+                    <p id="imya">Иван</p>
+                    <p id="otch">Иванович</p>
+                </div>
+                <p class="type">Турист</p>
+            </div>
+            <div class="card">
+                <p class="lk_info"><b>Личная карта</b></p>
+                <p class="sub_title">Нажмите на карту, чтобы скачать</p>
+                <img src="images/xkard.png" alt="xkard" id="xkard">
+            </div>
+        </section>
+        <section class="achiments">
+            <h2>Достижения</h2>
+            <div class="achiv_blocks">
+                <div class="achiv">
+                    <img src="images/achiv.png" alt="achiv">
+                    <div class="a_n_r">
+                        <span class="a_n">Name</span>
+                        <span class="a_r">Сделай что-то 5 раз</span>
+                    </div>
+                </div>
+                <div class="achiv">
+                    <img src="images/achiv.png" alt="achiv">
+                    <div class="a_n_r">
+                        <span class="a_n">Name</span>
+                        <span class="a_r">Сделай что-то 5 раз</span>
+                    </div>
+                </div>
+                <div class="achiv">
+                    <img src="images/achiv.png" alt="achiv">
+                    <div class="a_n_r">
+                        <span class="a_n">Name</span>
+                        <span class="a_r">Сделай что-то 5 раз</span>
+                    </div>
+                </div>
+                <div class="achiv">
+                    <img src="images/achiv.png" alt="achiv">
+                    <div class="a_n_r">
+                        <span class="a_n">Name</span>
+                        <span class="a_r">Сделай что-то 5 раз</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <h2>Активные услуги</h2>
+            <div class="serv_blocks">
+                <div class="service">
+                    <img src="images/service.png" alt="service">
+                    <div class="s_n_t">
+                        <span class="s_n">Транспорт</span>
+                        <span class="s_t">5 поездок</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/service.png" alt="service">
+                    <div class="s_n_t">
+                        <span class="s_n">Транспорт</span>
+                        <span class="s_t">5 поездок</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/service.png" alt="service">
+                    <div class="s_n_t">
+                        <span class="s_n">Транспорт</span>
+                        <span class="s_t">5 поездок</span>
+                    </div>
+                </div>
+                <div class="service">
+                    <img src="images/service.png" alt="service">
+                    <div class="s_n_t">
+                        <span class="s_n">Транспорт</span>
+                        <span class="s_t">5 поездок</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<div class="hidden">
+    <form action="images/xkard.png" target="_blank">
+        <button type="submit" id="download"></button>
+    </form>
+</div>
+<script src="scripts/jquery-3.6.0.min.js"></script>
+<script>
+$("#xkard").click(function(){
+    $("#download").click();
+});
+</script>
+</html>

@@ -1,0 +1,95 @@
+.content_header {
+    visibility: hidden;
+}
+h1 {
+    margin: 10px 0 30px 0;
+    font-size: 48px;
+}
+.sub_cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub_card {
+    margin-right: 40px;
+    margin-bottom: 24px;
+    background: #D9D9D9;
+    border-radius: 16px;
+    border: 0;
+    padding: 20px;
+}
+.sub_card:hover{
+    background: #b9b9b9;
+}
+.sub_card p{
+    font-size: 24px;
+}
+.transport,
+.museum,
+.theater {
+    font-weight: bold;
+}
+.coast {
+    margin-top: 16px;
+}
+#menu_bg {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 102;
+}
+.about_sub  {
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 102;
+}
+#close {
+    width: 50px;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+#close:hover {
+    background: rgba(0,0,0,0.6);
+}
+.sub_block {
+    margin: auto;
+    margin-top: 300px;
+    max-width: 500px;
+    background: #D9D9D9;
+    padding: 30px;
+    border-radius: 20px;
+}
+.sub_block h2{
+    margin-bottom: 20px;
+}
+.sub_block p{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+.sub_block ul{
+    list-style-type: none;
+    margin-bottom: 16px;
+}
+.sub_block li{
+    margin-bottom: 4px;
+}
+.sub_block button{
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: 0;
+    background: #27AAE1;
+    color: white;
+}
+.sub_block button:hover {
+    background: #1e8cbb;
+}
+.sub_block button:active {
+    background: #176d92;
+}

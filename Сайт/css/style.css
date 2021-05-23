@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+main {
+    position: relative;
+    top: 65px;
+}
+header {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    background: #27AAE1;
+    height: 50px;
+    padding-bottom: 15px;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    margin: 0 20px;
+}
+.little_buttons,
+.central_buttons,
+.glav {
+    display: flex;
+    margin: 0 100px;
+    align-items: center;
+}
+.little_buttons img{
+    height: 35px;
+}
+.show_link {
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: -30px;
+}
+.show_link:hover {
+    background: #c0c0c0;
+}
+.hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новороссийск - Карта города</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=5a3c243f-73f4-479f-9457-11024404eb1c&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        // Функция ymaps.ready() будет вызвана, когда
+        // загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+        ymaps.ready(init);
+        function init(){
+            // Создание карты.
+            var myMap = new ymaps.Map("map", {
+                // Координаты центра карты.
+                // Порядок по умолчанию: «широта, долгота».
+                // Чтобы не определять координаты центра карты вручную,
+                // воспользуйтесь инструментом Определение координат.
+                center: [44.72, 37.76],
+                // Уровень масштабирования. Допустимые значения:
+                // от 0 (весь мир) до 19.
+                zoom: 13
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/map.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="glav">
+                <div class="show_link"><a href="#">Главная</a></div>
+            </div>
+            <div class="central_buttons">
+                <div class="show_link"><a href="./city_map.htm">Карта города</a></div>
+                <div class="show_link"><a href="./subscribes.htm">Услуги</a></div>
+            </div>
+            <div class="little_buttons">
+                <div class="show_link"><a href="#" id=help><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="./lk.htm"><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="#"><img src="images/btn1.svg" alt="btn1"></a></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <img src="images/logo_img.png" alt="logo_img">
+            <section class="content">
+                <h2>Пиццерия Сицилия</h2>
+                <div class="score">
+                    <img src="images/stars_5.svg" alt="5 stars" class="stars">
+                    <span id="score">4.9</span>
+                </div>
+                <h3>Меню</h3>
+                <div class="goods">
+                    <div class="good">
+                        <img src="images/good_img1.png" alt="good_img">
+                        <span class="name">Блюдо</span>
+                        <span class="cost">150 руб</span>
+                    </div>
+                    <div class="good">
+                        <img src="images/good_img1.png" alt="good_img">
+                        <span class="name">Блюдо</span>
+                        <span class="cost">150 руб</span>
+                    </div>
+                    <div class="good">
+                        <img src="images/good_img1.png" alt="good_img">
+                        <span class="name">Блюдо</span>
+                        <span class="cost">150 руб</span>
+                    </div>
+                </div>
+                <h3>Отзывы</h3>
+                <div class="reviews">
+                    <div class="review">
+                        <span class="name">Имя пользователя</span>
+                        <img src="images/stars_5.svg" alt="5 stars">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, magnam qui velit laboriosam doloremque officiis esse</span>
+                    </div>
+                    <div class="review">
+                        <span class="name">Имя пользователя</span>
+                        <img src="images/stars_5.svg" alt="5 stars">
+                        <span class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, magnam qui velit</span>
+                    </div>
+                </div>
+                <button id="bron">Забронировать столик</button>
+            </section>
+        </aside>
+        <section class="map">
+            <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A118fc5704c1ee1f9ca9081f7e811fb1a0276418c3b88db289a959ba209685be6&amp;width=827&amp;height=675&amp;lang=ru_RU&amp;scroll=true"></script> -->
+            <div id="map"></div>
+        </section>
+        <section class="filter">
+            <img src="images/btn1.svg" alt="btn1">
+            <img src="images/btn1.svg" alt="btn1">
+            <img src="images/btn1.svg" alt="btn1">
+            <img src="images/btn1.svg" alt="btn1">
+        </section>
+    </main>
+</body>
+</html>

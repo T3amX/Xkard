@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛК Новороссийск</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/subscribes.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="glav">
+                <div class="show_link"><a href="#">Главная</a></div>
+            </div>
+            <div class="central_buttons">
+                <div class="show_link"><a href="./city_map.htm">Карта города</a></div>
+                <div class="show_link"><a href="./subscribes.htm">Услуги</a></div>
+            </div>
+            <div class="little_buttons">
+                <div class="show_link"><a href="#" id=help><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="./lk.htm"><img src="images/btn1.svg" alt="btn1"></a></div>
+                <div class="show_link"><a href="#"><img src="images/btn1.svg" alt="btn1"></a></div>
+            </div>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="content_header">
+            костыль
+        </div>
+        <section class="subscribes">
+            <h1>Подписка города Новороссийск</h1>
+            <div class="sub_cards">
+                <div class="sub_card" onclick="showBuy()">
+                    <div class="points">
+                        <p class="transport">10 поездок</p>
+                        <p class="museum">2 посещения музея</p>
+                        <p class="theater">1 посещение театра</p>
+                    </div>
+                    <p class="coast">500 руб</p>
+                </div>
+                <div class="sub_card" onclick="showBuy()">
+                    <p class="transport">10 поездок</p>
+                    <p class="museum">2 посещения музея</p>
+                    <p class="theater">1 посещение театра</p>
+                    <p class="coast">500 руб</p>
+                </div>
+                <div class="sub_card" onclick="showBuy()">
+                    <p class="transport">10 поездок</p>
+                    <p class="museum">2 посещения музея</p>
+                    <p class="theater">1 посещение театра</p>
+                    <p class="coast">500 руб</p>
+                </div>
+                <div class="sub_card" onclick="showBuy()">
+                    <p class="transport">10 поездок</p>
+                    <p class="museum">2 посещения музея</p>
+                    <p class="theater">1 посещение театра</p>
+                    <p class="coast">500 руб</p>
+                </div>
+                <div class="sub_card" onclick="showBuy()">
+                    <p class="transport">10 поездок</p>
+                    <p class="museum">2 посещения музея</p>
+                    <p class="theater">1 посещение театра</p>
+                    <p class="coast">500 руб</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="about_sub hidden" id="buy">
+        <button onclick="showBuy()"><img src="images/close.png" alt="close" id="close"></button>
+        <div class="sub_block">
+            <h2>Оформление подписки на услуги</h2>
+            <p>В подписку входит:</p>
+            <ul>
+                <li>10 поездок на общественном транспорте</li>
+                <li>2 посещения любого музея в городе</li>
+                <li>1 посещение театра на выбранную Вами постановку</li>
+            </ul>
+            <button onclick="showBuy()">Получить подписку</button>
+        </div>
+    </section>
+</body>
+<script src="scripts/jquery-3.6.0.min.js"></script>
+<script>
+    function showBuy(){
+        $("#buy").toggleClass("hidden");
+    }
+</script>
+</html>
